@@ -8,7 +8,7 @@ Type=simple
 User=root
 Group=root
 WorkingDirectory=/home/pi
-ExecStart=/usr/bin/python /home/pi/retropie-remote/remote.py
+ExecStart=/usr/bin/python /home/pi/RetroPie-Remote/remote.py
 StandardOutput=syslog
 StandardError=syslog
 

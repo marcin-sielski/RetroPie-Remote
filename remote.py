@@ -5,7 +5,7 @@ Name: remote.py
 Version: 1.0
 Description: cec remote control for emulation station and retroarch in retropie
 Author: marcin.sielski@gmail.com
-Homepage: https://github.com/marcin-sielski/retropie-remote
+Homepage: https://github.com/marcin-sielski/RetroPie-Remote
 Licence: GPL3
 
 It depends on python-uinput package which contains
