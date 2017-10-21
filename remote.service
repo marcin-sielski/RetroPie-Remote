@@ -1,0 +1,16 @@
+[Unit]
+Description=Remote service
+After=syslog.target
+
+[Service]
+Restart=always
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/home/pi
+ExecStart=/usr/bin/python /home/pi/retropie-remote/remote.py
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
