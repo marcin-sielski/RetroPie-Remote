@@ -27,5 +27,4 @@ input_player1_f1 = "f1"
 
 ## Issues
 
-Remote control stops workring in Retroarch when gamepad is connected on Raspberry Pi 3 B however
-it works fine on Raspberry Pi Zero W.
+Remote control stops working in Retroarch when gamepad is connected on Raspberry Pi 3 B however it works fine on Raspberry Pi Zero W.
