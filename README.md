@@ -1,14 +1,15 @@
-# RetroPie-Remote package enables control of Emulation Station and Retroarch with remote over HDMI-CEC.
+# RetroPie-Remote package
+RetroPie-Remote package enables control of Emulation Station and Retroarch with remote over HDMI-CEC.
 
 ## Installation
 
 Execute
 
-'''make install'''
+```make install```
 
-and update '''/opt/retropie/configs/all/retroarch.cfg''' with following config.
+and update ```/opt/retropie/configs/all/retroarch.cfg``` with following config.
 
-'''
+```
 input_player1_a = "a"
 input_player1_b = "b"
 input_player1_y = "y"
@@ -22,7 +23,7 @@ input_player1_down = "down"
 input_player1_enter = "enter"
 input_player1_escape = "escape"
 input_player1_f1 = "f1"
-'''
+```
 
 ## Issues
 
