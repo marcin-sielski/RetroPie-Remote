@@ -24,7 +24,7 @@ import uinput
 import sys
 import time
 from time import sleep
-
+from subprocess import call
 
 def get_keymap():
     """Map supported keys to python-uinput keys"""
@@ -167,10 +167,10 @@ def press_keys(line, device, keylist):
 
         elif "select" in line or "red" in line:
 
-            device.emit(keylist[4], 1)
+            device.emit(keylist[10], 1)
             device.emit(keylist[0], 1)
             sleep(0.02)
-            device.emit(keylist[4], 0)
+            device.emit(keylist[10], 0)
             device.emit(keylist[0], 0)
 
         elif "green" in line:
@@ -182,10 +182,11 @@ def press_keys(line, device, keylist):
         elif "exit" in line:
 
             device.emit(keylist[1], 1)
-            device.emit(keylist[5], 1)
+            device.emit(keylist[11], 1)
             sleep(0.02)
             device.emit(keylist[1], 0)
-            device.emit(keylist[5], 0)
+            device.emit(keylist[11], 0)
+            call(["killall", "retroarch"])
 
         elif "yellow" in line:
 
@@ -201,21 +202,21 @@ def press_keys(line, device, keylist):
 
         elif "21" in line:
 
-            device.emit(keylist[10], 1)
-            sleep(0.02)
-            device.emit(keylist[10], 0)
-
-        elif "play" in line:
-
-            device.emit(keylist[11], 1)
-            sleep(0.02)
-            device.emit(keylist[11], 0)
-
-        elif "pause" in line:
-
             device.emit(keylist[12], 1)
             sleep(0.02)
             device.emit(keylist[12], 0)
+
+        elif "play" in line:
+
+            device.emit(keylist[4], 1)
+            sleep(0.02)
+            device.emit(keylist[4], 0)
+
+        elif "pause" in line:
+
+            device.emit(keylist[5], 1)
+            sleep(0.02)
+            device.emit(keylist[5], 0)
 
         # Uncomment the prinnt statement below to display remote output
         #print line
