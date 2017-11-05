@@ -5,7 +5,7 @@ RetroPie-Remote package enables control of Emulation Station and Retroarch with 
 
 Execute
 
-```make install```
+```sudo make install```
 
 and update ```/opt/retropie/configs/all/retroarch.cfg``` with following config.
 
