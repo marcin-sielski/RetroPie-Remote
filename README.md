@@ -11,7 +11,7 @@ cd RetroPie-Remote
 sudo make install
 ```
 
-and then update ```/opt/retropie/configs/all/retroarch.cfg``` with following config.
+and then update ```/opt/retropie/configs/all/retroarch.cfg``` with following config:
 
 ```
 input_player1_a = "a"
