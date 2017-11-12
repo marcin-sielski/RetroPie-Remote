@@ -7,6 +7,7 @@ install:
 	cp remote.service /etc/systemd/system
 	mv /home/pi/.emulationstation/es_input.cfg /home/pi/.emulationstation/es_input.cfg.bak
 	cp es_input.cfg /home/pi/.emulationstation
+	chown pi:pi /home/pi/.emulationstation
 	addgroup uinput
 	adduser pi uinput
 	systemctl enable remote.service
